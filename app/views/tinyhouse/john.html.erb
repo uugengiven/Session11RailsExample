@@ -1,0 +1,18 @@
+<h1>You have found john's page</h1>
+
+<form action="/john_submit" method="get">
+    <input type="text" name="title">
+    <input type="number" name="rating">
+    <input type="number" name="release_year">
+    <input type="text" name="director">
+    <input type="text" name="review">
+    <button>Multiply it!</button>
+</form>
+
+<% @movies.each do |movie| %>
+<div>
+    <h1><%= movie.title %> (<%= movie.release_year %>)</h1>
+    <h2><%= movie.director%></h2>
+    <h2>Rating: <%= movie.rating %></h2>
+</div>
+<% end %>

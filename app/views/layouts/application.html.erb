@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movies</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/McCormick.svg/1244px-McCormick.svg.png">
+      <h1>Best page ever, thanks for visiting</h1>
+    </header>
+    <div class="maincontent">
+      <%= yield %>
+    </div>
+    <footer>Copyright 2020 Four Seasonings Websites and Events</footer>
+  </body>
+</html>
